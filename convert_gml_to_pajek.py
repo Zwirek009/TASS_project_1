@@ -3,9 +3,7 @@ import matplotlib.pyplot as plt
 
 def main():
     G = nx.read_gml("network/lesmis.gml")
-    GU = G.to_undirected()
-    nx.draw(GU)
-    plt.show()
+    nx.write_pajek(G, "network/lasmis.net")
 
 if __name__ == "__main__":
     main()
