@@ -23,7 +23,7 @@ def main():
     print('DONE\n')
 
     print('\nConverting graph to .net file for Pajek usage...')
-    nx.write_pajek(G, 'network/lasmis.net')     # convert graph to .net file for Pajek usage
+    nx.write_pajek(GU, 'network/lasmis.net')     # convert graph to .net file for Pajek usage
     print('DONE\n')
 
     print('\nGenerating connected components as subgraphs...')
